@@ -66,3 +66,4 @@ jobs:
 
       - name: Deployment simulation complete
         run: echo "✅ Deployment simulation finished (no real server deployed)."
+             echo "My name is JHT"
