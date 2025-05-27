@@ -28,6 +28,9 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      - name: Make build.sh executable
+        run: chmod +x ./build.sh
+
       - name: Run Build Script
         run: ./build.sh
 
@@ -37,6 +40,9 @@ jobs:
     needs: build
     steps:
       - uses: actions/checkout@v4
+
+      - name: Make test.sh executable
+        run: chmod +x ./test.sh
 
       - name: Run Test Script
         run: ./test.sh
